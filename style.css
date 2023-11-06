@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Asul', sans-serif;
+    color: white;
+
+}
+
+.header{
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.8)0,rgba(0, 0, 0, 0.3)60%,rgba(0, 0, 0, 0.8)100%),url(./newFolder/header.png);
+    width: 100%;
+    height: 110vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 8px solid rgb(57, 55, 55);
+}
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        
+        padding:2px 10px;
+    }
+    .logoImg{
+        width:200px ;
+    }
+    .logo{
+        width: 100%;
+    }
+    .btn{
+       background-color: #ef0c0cf7;
+       padding: 8px 12px;
+       color:white;
+       font-weight: 600;
+       font-size: 1.1rem;
+       border-radius: 8px;
+       text-decoration: none;
+       margin-right: 50px;
+    }
+    .btn:hover{
+        background-color: rgba(195, 13, 13, 0.993);  
+    }
+    section{
+        width: 100%;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      flex-wrap: nowrap;
+        text-align: center;
+        row-gap: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+       transform: translate(-50%,-35%);
+
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-weight: 100;
+        font-size: 1.1rem;
+        padding-top: 5px;
+        padding-bottom: 8px;
+        color: white;
+    }
+    p{
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+    .info{
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 12px 10px;
+        text-align: justify;
+       
+    }
+    input{
+        flex-grow: 1;
+        padding: 8px 10px ;
+        border: 1px solid ;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.451);
+        color: gainsboro;
+        font-size: 1.1rem;
+    }
+    button{
+        padding: 8px 10px ;
+        background-color: #ef0c0cf7;
+        border: none;
+        border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+
+    }
+
+/* media queries start*/
+
+    @media screen and (min-width:1260px) {
+        nav{
+            
+            padding: 5px 100px;
+        }
+        h1{
+            font-size: 3rem;
+        }
+        h2,p{
+            font-size: 1.7rem;
+        }
+    }
+    @media screen and (max-width:550px) {
+        .header{
+            flex-wrap: wrap;
+            overflow: hidden;
+            gap: 10px;
+        }
+        nav{
+            flex-wrap: wrap;
+            overflow: hidden;
+            align-items: center;
+            text-align: center;
+         
+        }
+        section{
+            transform: translate(-50%,-25%);
+            
+        }
+        .info{
+            width: 90%;
+        flex-direction: column;
+            flex-wrap: wrap;
+            overflow: hidden;
+            padding: 5px 10px;
+        }
+        input{width: 80%};
+
+        /* 2nd division */
+
+        .container{
+            display: grid;
+            grid-template-columns: auto;
+            
+        }
+    }
+    @media screen and (max-width:360px) {
+        nav{
+            justify-content: center;}
+        
+    }
+    @media screen and (max-width:800px) {
+        
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+
+}
+.contentEnjoy{
+    width: 100%;
+    text-align: center;
+}
+
+        
+    }
+
+    /* media queries end */
+
+/* 2nd division start */
+
+.container-fluid{
+    width: 100%;
+    
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 80px;
+    border-bottom: 8px solid rgb(57, 55, 55);
+}
+
+.contentEnjoy{
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+  
+}
+
+h3{
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.tvPic{
+    position: relative;
+ }
+ .video{
+     position: absolute;
+    transform: translate(16%,-140%);
+    mix-blend-mode: screen;
+ }
+.mbpic{
+    width: 75%;
+}
+
+
+
+
+/* 2nd division end */
+
+/* 3rd division */
+
+
+
+
+
+
+/* 4th division */
+
+.onlyText{
+    height: 60vh;
+}
+.textonly{
+    text-align: left;
+}
+
+/* 5th division */
+@media screen and (max-width:930px) {
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .picVideo,.contentEnjoy{
+        width: 100%;
+    }
+    .tvPic{
+        background-position: center;
+    }
+}
+
+
+
+/* accordion */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid rgb(57, 55, 55);
+}
+.heading{
+    width: 100%;
+    text-align: top;
+   margin-top: -50px;
+   margin-bottom: 80px; 
+}
+h4{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+/* label{
+    color: white;
+    position: relative;
+    display: block;
+}
+label::after{
+    content: '+';
+    position: absolute;
+    right: 30px;
+    font-size: 2rem;
+
+}
+li .hiddenContent{
+    overflow: hidden;
+   visibility: collapse;
+    max-height: 0px;
+    padding: 0px 1.5rem;
+    transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    text-align: left;
+    background-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+input[type="radio"]{
+    display: none;
+}
+.head:focus .hiddenContent{
+   max-height: 100px;
+   visibility: visible;
+} */
+/* footer */
+.containerfooter{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid rgb(57, 55, 55);
+}
+.footerDivs{
+    width: 100%;
+}
+.footerDivs ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    text-align: left;
+  padding: 30px;
+    column-gap: 200px;
+}
+footer>a{
+    margin-left: 31px;
+}
+@media screen and (max-width:930px) {
+    .footerDivs ul{
+        padding: 30px 10px;
+        column-gap: 80px;
+        row-gap: 20px;  
+    }
+    footer>a{
+        margin-left: 9px;
+    }
+}
